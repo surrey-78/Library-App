@@ -15,7 +15,7 @@ const addNewBook = async(request,response) => {
     }
     catch(error)
     {
-        return response.send(500).json({message : error.message})
+        return response.status(500).json({message : error.message})
     }
 }
 
